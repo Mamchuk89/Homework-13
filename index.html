@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неделя 13</title>
+</head>
+<body>
+    <style>
+        .btn {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .calc {
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin-right: 5px;
+        }
+    </style>
+
+
+    <!-- Кнопка --> 
+    <section class="btn">
+    <button onclick="messange()">Нажми на меня!</button>
+</section>
+
+<!-- Калькулятор --> 
+<section class="calc">
+    <h2>Калькулятор</h2>
+<button onclick="calcSum()">+</button>
+<button onclick="calcMinus()">-</button>
+<button onclick="calcMultiply()">*</button>
+<button onclick="calcDivide()">/</button>
+</section>
+
+    <script>
+        /*Скрипт для кнопки*/
+        function messange() {
+            let name = prompt('Как тебя зовут?');
+            alert(`Приветик, ${name}! Приятно познакомиться!`);
+        }
+
+        /*Скрипт для калькулятора*/
+
+        /*Сложение*/
+        function calcSum() {
+            let a = +prompt("Введите первое число:");
+            let b = +prompt("Введите второе число:");
+            alert(a + b);
+        }
+
+        /*Вычитание*/
+        function calcMinus() {
+            let a = +prompt("Введите первое число:");
+            let b = +prompt("Введите второе число:");
+            alert(a - b);
+        }
+
+        /*Умножение*/
+        function calcMultiply() {
+            let a = +prompt("Введите первое число:");
+            let b = +prompt("Введите второе число:");
+            alert(a * b);
+        }
+
+        /*Деление*/
+        function calcDivide() {
+            let a = +prompt("Введите первое число:");
+            let b = +prompt("Введите второе число:");
+            alert(a / b);
+        }
+    </script>
+</body>
+</html>
